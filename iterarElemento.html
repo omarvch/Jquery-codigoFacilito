@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Curso de JQUERY</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<h1 class="saludo">hola codigo Facilito</h1>
+	<p id="parrafo" class="ocultar">Saludos a Todos</p>
+	<div>:3 :)</div>
+
+	<style type="text/css">
+		.ocultar{
+			display: none;
+		}
+	</style>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+			
+		//iterar elementos
+		$(function(){
+			var ar = [1,2,4,5,3,2,5,4,2,7];
+
+			$.each(ar, function(i,value){
+				console.log(i +":"+value);
+			});
+
+			for (var i = ar.length - 1; i >= 0; i--) {
+				console.log(ar[i]);
+			}
+		});
+		
+
+	</script>
+</body>
+</html></html>

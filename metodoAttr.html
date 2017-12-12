@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Curso de JQUERY</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<h1 class="saludo">hola codigo Facilito</h1>
+	<p id="parrafo" class="ocultar">Saludos a Todos</p>
+	<img src="img/logoCodigoFacilito.png" id="coco">
+	<div>:3 :)</div>
+
+	<style type="text/css">
+		.ocultar{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+			
+		//metodo ATTR
+		$(function(){
+			$('#coco').click(function(){
+				$('#coco').attr('width',300);
+			});
+		});
+		
+
+	</script>
+</body>
+</html></html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Curso de JQUERY</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<h1 class="saludo">hola codigo Facilito</h1>
+	<p id="parrafo" class="ocultar">Saludos a Todos</p>
+	<div>:3 :)</div>
+
+	<style type="text/css">
+		.ocultar{
+			display: none;
+		}
+	</style>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+			
+		//For of
+		var numbers = [1,5,3,8,9,5,4,3];
+		for(let num of numbers){
+			console.log(num);
+		}
+
+		var colors =[{
+			"colores": [{
+				"colorName":"red",
+				"hexValue":"#f00"
+			},
+			{
+				"colorName":"green",
+				"hexValue":"#0f0"
+			},
+			{
+				"colorName":"blue",
+				"hexValue":"#00f"
+			}]
+		}];
+
+		for(let color of colors){
+			console.log(color.colores[1].colorName);
+		}
+		
+
+	</script>
+</body>
+</html></html>

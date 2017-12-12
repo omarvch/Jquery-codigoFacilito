@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Curso de JQUERY</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<h1 class="saludo">hola codigo Facilito</h1>
+	<p id="parrafo" class="ocultar">Saludos a Todos</p>
+	<div>:3 :)</div>
+
+	<style type="text/css">
+		.ocultar{
+			display: none;
+		}
+	</style>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+			
+		//calse CSS hasClass addClass removeClass
+		$('#parrafo').css({'background':'red'});
+
+
+		if($('#parrafo').hasClass('saludo')){
+			/*alert("tiene la clase salud");*/
+			$('#parrafo').show(3000);
+		}else{
+			/*alert('no tiene la clase saludo');*/
+			$('div').hide(3000);
+		}
+
+	</script>
+</body>
+</html></html>

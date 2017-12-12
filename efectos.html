@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Curso de JQUERY</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<h1 class="saludo">hola codigo Facilito</h1>
+	<p id="parrafo" class="ocultar">Saludos a Todos</p>
+	<img src="img/logoCodigoFacilito.png" id="coco" width="400">
+	<button type="" id="btn1">Mostrar</button>
+	<button type="" id="btn2">Ocultar</button>
+	<style type="text/css">
+		.ocultar{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		//Efectos
+		$(function(){
+/*			$('#btn1').click(function(){
+				$('#coco').slideDown();
+			});
+
+			$('#btn2').click(function(){
+				$('#coco').slideUp();
+			});*/
+
+			/*$('#btn1').click(function(){
+				$('#coco').fadeIn();
+			});
+			$('#btn2').click(function(){
+				$('#coco').fadeOut();
+			});*/
+
+			$('#btn1').click(function(){
+				$('#coco').animate({height: "900px"},3000);
+			});
+			$('#btn2').click(function(){
+				$('#coco').animate({height: "150px"});
+			});
+		});
+
+	</script>
+</body>
+</html></html>
