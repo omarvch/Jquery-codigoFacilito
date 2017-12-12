@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div id="resultado"><div> 
+	<input type="text" id="nombre">
+	<input type="text" id="edad">
+	<button id="btn-probar">Ejecutar</button>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/aba38d71f3.js"></script>
+	<script type="text/javascript">
+			
+		//Metodo Animate
+	$('#btn-probar').click( function () { 
+		/*/Obtengo los valores de los input/ */
+		var input1= $('#nombre').val();
+		var input2= $('#edad').val();
+
+		/*Realizo la petición GET*/ 
+		$.get('ejemplo.php', {nombre: input1, edad: input2}, function (respuesta) { 
+		/*Selecciono y envío a mi etiqueta div el resultado*/ $('#resultado').html(respuesta);
+		});
+	});
+		
+
+	</script>
+</body>
+</html>

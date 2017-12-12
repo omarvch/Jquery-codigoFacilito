@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Curso de JQUERY</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+	<h1>Padres, hijos y hermanos</h1>
+
+	<ol id="padre-ol">
+		<li>Elemento 1</li>
+		<li class="hijo">Elemento 2</li>
+		<li>Elemento 3</li>
+		<li>Elemento 4</li>
+	</ol>
+	<button id="exe">Ejecutar</button>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/aba38d71f3.js"></script>
+	<script type="text/javascript">
+			
+		//Metodo Animate
+		$(function(){
+			var cad = '{"name":"Luis","lastName":"Vasquez","edad":30}'
+			var obj = JSON.parse(cad);
+			console.log(obj.name + " " + obj.lastName + " tiene "+ obj.edad);
+		});
+		
+
+	</script>
+</body>
+</html></html>

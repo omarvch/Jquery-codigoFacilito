@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Curso de JQUERY</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+	<h1>Padres, hijos y hermanos</h1>
+
+	<ol id="padre-ol">
+		<li>Elemento 1</li>
+		<li class="hijo">Elemento 2</li>
+		<li>Elemento 3</li>
+		<li>Elemento 4</li>
+	</ol>
+	<button id="exe">Ejecutar</button>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/aba38d71f3.js"></script>
+	<script type="text/javascript">
+			
+		//Metodo Animate
+		$(function(){
+			var hijos = $('#padre-ol').children().text();
+			var padre = $('.hijo').parent();
+			var hermanos = $('.hijo').siblings().text();
+			console.log(hermanos);
+
+			$('#exe').click(function(){
+				var li = $('<li>',{text: 'Virtual Element'});
+				$(li).addClass('virtualElement');
+				$('#padre-ol').append(li);
+				$('.virtualElement').click(function(){
+					alert("elemento virtual");
+				});
+			});
+
+		});
+		
+
+	</script>
+</body>
+</html></html>
